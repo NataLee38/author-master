@@ -24,14 +24,14 @@ footer {
   .team_img:after {
     position: absolute;
     top: -76px;
-    left: 87px;
-    font-size: 40px;
+    left: 85px;
+    font-size: 50px;
     color: red;
     display: block;
     content: "+";
     transition: 0.5s; }
   .team_img:hover:after {
-    top: 76px;
+    top: 67px;
     transform: rotate(360deg); }
 
 .navbar-brand {
@@ -57,5 +57,76 @@ footer {
 
 nav.navbar.navbar-default {
   background: linear-gradient(to top, white, white); }
+
+.navbar-default {
+  border: none; }
+
+.navbar {
+  margin-bottom: 0; }
+
+.bg_block {
+  background-image: url("../images/bg.jpg");
+  height: 565px;
+  background-size: cover; }
+
+.owl-carousel {
+  margin-top: 118px; }
+  .owl-carousel h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 63px;
+    font-weight: 600;
+    color: white; }
+  .owl-carousel p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23px;
+    color: white;
+    margin-top: 28px;
+    line-height: 36px; }
+  .owl-carousel a {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 22px 41px;
+    border: 3px solid white;
+    display: inline-block;
+    margin-top: 56px;
+    border-radius: 7px; }
+    .owl-carousel a:hover {
+      background-color: white;
+      color: #44c0c2;
+      text-decoration: none; }
+
+.owl-nav .owl-prev {
+  width: 50px;
+  height: 50px;
+  background-color: white !important;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 143px;
+  font-family: "Font Awesome 5 Free" !important;
+  color: #44c0c2 !important;
+  font-size: 35px !important;
+  font-weight: 900 !important; }
+  .owl-nav .owl-prev:before {
+    content: "\f104"; }
+
+.owl-nav .owl-next {
+  width: 50px;
+  height: 50px;
+  background-color: white !important;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 143px;
+  font-family: "Font Awesome 5 Free" !important;
+  color: #44c0c2 !important;
+  font-size: 35px !important;
+  font-weight: 900 !important; }
+  .owl-nav .owl-next:before {
+    content: "\f105"; }
 
 /*# sourceMappingURL=style.css.map */

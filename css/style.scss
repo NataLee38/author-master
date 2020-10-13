@@ -1,5 +1,6 @@
 $main_color: #44c0c2;
 $second_color: #484c55;
+$white_color: white;
 
 .background{
   height: 564px;
@@ -31,8 +32,8 @@ footer{
   &:after{
     position: absolute;
     top: -76px;
-    left: 87px;
-    font-size: 40px;
+    left: 85px;
+    font-size: 50px;
     color: red;
     display: block;
     content: "+";
@@ -40,7 +41,7 @@ footer{
   }
   &:hover{
     &:after{
-      top: 76px;
+      top: 67px;
       transform: rotate(360deg);
     }
   }
@@ -77,3 +78,85 @@ nav.navbar.navbar-default{
   background: linear-gradient(to top, white, white);
 }
 
+.navbar-default{
+  border: none;
+}
+
+.navbar{
+  margin-bottom: 0;
+}
+
+.bg_block{
+  background-image: url('../images/bg.jpg');
+  height: 565px;
+  background-size: cover;
+}
+
+.owl-carousel{
+  margin-top: 118px;
+  h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 63px;
+    font-weight: 600;
+    color: $white_color;
+  }
+  p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23px;
+    color: $white_color;
+    margin-top: 28px;
+    line-height: 36px;
+  }
+  a{
+    color: $white_color;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 22px 41px;
+    border: 3px solid $white_color;
+    display: inline-block;
+    margin-top: 56px;
+    border-radius: 7px;
+    &:hover{
+      background-color: $white_color;
+      color: $main_color;
+      text-decoration: none;
+    }
+  }
+}
+
+.owl-nav .owl-prev{
+  width: 50px;
+  height: 50px;
+  background-color: $white_color!important;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 143px;
+  font-family: "Font Awesome 5 Free"!important;
+  color: $main_color!important;
+  font-size: 35px!important;
+  font-weight: 900!important;
+  &:before{
+    content: "\f104";
+  }
+}
+
+.owl-nav .owl-next{
+  width: 50px;
+  height: 50px;
+  background-color: $white_color!important;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 143px;
+  font-family: "Font Awesome 5 Free"!important;
+  color: $main_color!important;
+  font-size: 35px!important;
+  font-weight: 900!important;
+  &:before{
+    content: "\f105";
+  }
+}
