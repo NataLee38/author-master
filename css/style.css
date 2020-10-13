@@ -3,14 +3,58 @@
   background-color: #93c4b8;
   text-align: center; }
 
-.center {
-  text-align: center; }
-
 footer {
   height: 687px;
   background-color: #4a4a4a; }
 
 .white {
   color: white; }
+
+.team_img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  display: inline-block;
+  background-color: gray;
+  border-radius: 50%;
+  position: relative; }
+  .team_img img {
+    display: block;
+    width: 100%; }
+  .team_img:after {
+    position: absolute;
+    top: -76px;
+    left: 87px;
+    font-size: 40px;
+    color: red;
+    display: block;
+    content: "+";
+    transition: 0.5s; }
+  .team_img:hover:after {
+    top: 76px;
+    transform: rotate(360deg); }
+
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+  font-size: 43px;
+  color: #44c0c2 !important;
+  margin-top: 30px; }
+
+.navbar-nav {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #484c55 !important; }
+  .navbar-nav li {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 3px solid rgba(0, 0, 0, 0); }
+    .navbar-nav li:hover {
+      background-color: #f8f9fb;
+      border-bottom: 3px solid #49cbcd; }
+    .navbar-nav li a {
+      padding: 44px 24px; }
+
+nav.navbar.navbar-default {
+  background-color: white;
+  background: linear-gradient(to top, white, white); }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,9 @@
+$main_color: #44c0c2;
+$second_color: #484c55;
+
 .background{
   height: 564px;
   background-color: #93c4b8;
-  text-align: center;
-}
-
-.center{
   text-align: center;
 }
 
@@ -16,3 +15,64 @@ footer{
 .white{
   color: white;
 }
+
+.team_img{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  display: inline-block;
+  background-color: gray;
+  border-radius: 50%;
+  position: relative;
+  img{
+    display: block;
+    width: 100%;
+  }
+  &:after{
+    position: absolute;
+    top: -76px;
+    left: 87px;
+    font-size: 40px;
+    color: red;
+    display: block;
+    content: "+";
+    transition: 0.5s;
+  }
+  &:hover{
+    &:after{
+      top: 76px;
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.navbar-brand{
+  font-family: 'Lobster', cursive;
+  font-size: 43px;
+  color: $main_color!important;
+  margin-top: 30px;
+}
+
+.navbar-nav{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: $second_color!important;
+  li{
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    &:hover{
+      background-color: rgba(248, 249, 251, 1);
+      border-bottom: 3px solid rgba(73, 203, 205, 1);
+    }
+    a{
+      padding: 44px 24px;
+    }
+  }
+}
+
+nav.navbar.navbar-default{
+  background-color: white;
+  background: linear-gradient(to top, white, white);
+
+}
+
