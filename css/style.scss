@@ -66,13 +66,14 @@ footer{
     }
     a{
       padding: 44px 24px;
+      &:hover{
+        color: $main_color!important;
+      }
     }
   }
 }
 
 nav.navbar.navbar-default{
-  background-color: white;
   background: linear-gradient(to top, white, white);
-
 }
 
