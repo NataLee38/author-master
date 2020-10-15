@@ -1,3 +1,9 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
 $main_color: #44c0c2;
 $second_color: #484c55;
 $white_color: white;
@@ -55,6 +61,15 @@ footer {
   font-size: 43px;
   color: $main_color !important;
   margin-top: 30px;
+  @include max-screen(320px){
+    margin-bottom: 30px;
+  }
+}
+
+.navbar-toggle{
+  @include max-screen(320px){
+    margin-top: 38px;
+  }
 }
 
 .navbar-nav {
@@ -75,6 +90,9 @@ footer {
 
     a {
       padding: 44px 24px;
+      @include max-screen(320px){
+        padding: 20px 24px;
+      }
 
       &:hover {
         color: $main_color !important;
@@ -214,25 +232,24 @@ nav.navbar.navbar-default {
 }
 
 .coupons {
-    a {
-      padding: 0 50px;
-      background-color: #788492;
-      display: inline-block;
-      margin: 30px 0;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 600;
-      font-size: 17px;
-      text-decoration: none;
-      color: $white_color;
-      border-radius: 4px;
-      border: 3px solid rgba(0, 0, 0, 0);
+  a {
+    padding: 0 50px;
+    background-color: #788492;
+    display: inline-block;
+    margin: 30px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    color: $white_color;
+    border-radius: 4px;
+    border: 3px solid rgba(0, 0, 0, 0);
 
-      &:hover {
-        background-color: $white_color !important;
-        color: #485460;
-        border: 3px solid rgba(72, 84, 96, 1);
-        transition: 0.2s;
-      }
+    &:hover {
+      background-color: $white_color !important;
+      color: #485460;
+      border: 3px solid rgba(72, 84, 96, 1);
+      transition: 0.2s;
     }
   }
 
@@ -248,6 +265,7 @@ nav.navbar.navbar-default {
       line-height: 46px;
       font-size: 14px;
       background-color: $white_color;
+
       &:first-of-type {
         line-height: 75px;
         font-family: 'Open Sans', sans-serif;
@@ -255,6 +273,7 @@ nav.navbar.navbar-default {
         font-size: 26px;
         background-color: #485460;
       }
+
       &:nth-child(2) {
         font-family: 'Open Sans', sans-serif;
         line-height: 68px;
@@ -262,13 +281,15 @@ nav.navbar.navbar-default {
         color: #485460;
         background-color: #f8f9fb;
       }
-      &:last-of-type{
+
+      &:last-of-type {
         background-color: #f8f9fb;
       }
     }
   }
-
-
-.aqua {
-  background-color: #49cbcd !important;
 }
+
+
+  .aqua {
+    background-color: #49cbcd !important;
+  }
