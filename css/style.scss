@@ -214,23 +214,6 @@ nav.navbar.navbar-default {
 }
 
 .coupons {
-  h3 {
-    line-height: 75px;
-    font-family: 'Open Sans', sans-serif;
-    color: $white_color;
-    font-size: 26px;
-    background-color: #485460;
-    margin: 0;
-  }
-
-  p {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 68px;
-    font-size: 20px;
-    color: #485460;
-    background-color: #f8f9fb;
-    margin: 0;
-
     a {
       padding: 0 50px;
       background-color: #788492;
@@ -265,9 +248,26 @@ nav.navbar.navbar-default {
       line-height: 46px;
       font-size: 14px;
       background-color: $white_color;
+      &:first-of-type {
+        line-height: 75px;
+        font-family: 'Open Sans', sans-serif;
+        color: $white_color;
+        font-size: 26px;
+        background-color: #485460;
+      }
+      &:nth-child(2) {
+        font-family: 'Open Sans', sans-serif;
+        line-height: 68px;
+        font-size: 20px;
+        color: #485460;
+        background-color: #f8f9fb;
+      }
+      &:last-of-type{
+        background-color: #f8f9fb;
+      }
     }
   }
-}
+
 
 .aqua {
   background-color: #49cbcd !important;

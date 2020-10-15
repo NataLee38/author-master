@@ -160,48 +160,49 @@ nav.navbar.navbar-default {
   background-color: #f1f1f1;
   padding: 118px 0 100px; }
 
-.coupons h3 {
-  line-height: 75px;
+.coupons a {
+  padding: 0 50px;
+  background-color: #788492;
+  display: inline-block;
+  margin: 30px 0;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: none;
   color: white;
-  font-size: 26px;
-  background-color: #485460;
-  margin: 0; }
-.coupons p {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 68px;
-  font-size: 20px;
-  color: #485460;
-  background-color: #f8f9fb;
-  margin: 0; }
-  .coupons p a {
-    padding: 0 50px;
-    background-color: #788492;
-    display: inline-block;
-    margin: 30px 0;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 17px;
-    text-decoration: none;
-    color: white;
-    border-radius: 4px;
-    border: 3px solid rgba(0, 0, 0, 0); }
-    .coupons p a:hover {
-      background-color: white !important;
-      color: #485460;
-      border: 3px solid #485460;
-      transition: 0.2s; }
-.coupons ul {
+  border-radius: 4px;
+  border: 3px solid rgba(0, 0, 0, 0); }
+  .coupons a:hover {
+    background-color: white !important;
+    color: #485460;
+    border: 3px solid #485460;
+    transition: 0.2s; }
+
+ul {
   list-style: none;
   padding: 0;
   margin-bottom: 0; }
-  .coupons ul li {
+  ul li {
     border: 1px solid #f8f9fb;
     color: #8c9299;
     font-family: 'Open Sans', sans-serif;
     line-height: 46px;
     font-size: 14px;
     background-color: white; }
+    ul li:first-of-type {
+      line-height: 75px;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      font-size: 26px;
+      background-color: #485460; }
+    ul li:nth-child(2) {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 68px;
+      font-size: 20px;
+      color: #485460;
+      background-color: #f8f9fb; }
+    ul li:last-of-type {
+      background-color: #f8f9fb; }
 
 .aqua {
   background-color: #49cbcd !important; }
