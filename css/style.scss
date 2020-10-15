@@ -2,22 +2,22 @@ $main_color: #44c0c2;
 $second_color: #484c55;
 $white_color: white;
 
-.background{
+.background {
   height: 564px;
   background-color: #93c4b8;
   text-align: center;
 }
 
-footer{
+footer {
   height: 687px;
   background-color: #4a4a4a;
 }
 
-.white{
+.white {
   color: white;
 }
 
-.team_img{
+.team_img {
   width: 200px;
   height: 200px;
   overflow: hidden;
@@ -25,11 +25,13 @@ footer{
   background-color: gray;
   border-radius: 50%;
   position: relative;
-  img{
+
+  img {
     display: block;
     width: 100%;
   }
-  &:after{
+
+  &:after {
     position: absolute;
     top: -76px;
     left: 85px;
@@ -39,124 +41,234 @@ footer{
     content: "+";
     transition: 0.5s;
   }
-  &:hover{
-    &:after{
+
+  &:hover {
+    &:after {
       top: 67px;
       transform: rotate(360deg);
     }
   }
 }
 
-.navbar-brand{
+.navbar-brand {
   font-family: 'Lobster', cursive;
   font-size: 43px;
-  color: $main_color!important;
+  color: $main_color !important;
   margin-top: 30px;
 }
 
-.navbar-nav{
+.navbar-nav {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
-  color: $second_color!important;
-  li{
+  color: $second_color !important;
+
+  li {
     background-color: rgba(0, 0, 0, 0);
     border-bottom: 3px solid rgba(0, 0, 0, 0);
-    &:hover{
+
+    &:hover {
       background-color: rgba(248, 249, 251, 1);
       border-bottom: 3px solid rgba(73, 203, 205, 1);
     }
-    a{
+
+    transition: 0.2s;
+
+    a {
       padding: 44px 24px;
-      &:hover{
-        color: $main_color!important;
+
+      &:hover {
+        color: $main_color !important;
+        transition: 0.2s;
       }
     }
   }
 }
 
-nav.navbar.navbar-default{
+nav.navbar.navbar-default {
   background: linear-gradient(to top, white, white);
 }
 
-.navbar-default{
+.navbar-default {
   border: none;
 }
 
-.navbar{
+.navbar {
   margin-bottom: 0;
 }
 
-.bg_block{
+.bg_block {
   background-image: url('../images/bg.jpg');
   height: 565px;
   background-size: cover;
 }
 
-.owl-carousel{
+.owl-carousel {
   margin-top: 118px;
-  h1{
+
+  h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 63px;
     font-weight: 600;
     color: $white_color;
   }
-  p{
+
+  p {
     font-family: 'Open Sans', sans-serif;
     font-size: 23px;
     color: $white_color;
     margin-top: 28px;
     line-height: 36px;
   }
-  a{
+
+  a {
     color: $white_color;
     font-family: 'Open Sans', sans-serif;
     font-size: 26px;
     font-weight: 600;
-    padding: 22px 41px;
+    padding: 15px 41px;
     border: 3px solid $white_color;
     display: inline-block;
     margin-top: 56px;
     border-radius: 7px;
-    &:hover{
+
+    &:hover {
       background-color: $white_color;
       color: $main_color;
       text-decoration: none;
+      transition: 0.2s;
     }
   }
 }
 
-.owl-nav .owl-prev{
+.owl-nav .owl-prev {
   width: 50px;
   height: 50px;
-  background-color: $white_color!important;
+  background-color: $white_color !important;
   border-radius: 50%;
   display: block;
   position: absolute;
   left: 0;
   top: 143px;
-  font-family: "Font Awesome 5 Free"!important;
-  color: $main_color!important;
-  font-size: 35px!important;
-  font-weight: 900!important;
-  &:before{
+  font-family: "Font Awesome 5 Free" !important;
+  color: $main_color !important;
+  font-size: 35px !important;
+  font-weight: 900 !important;
+
+  &:before {
     content: "\f104";
   }
 }
 
-.owl-nav .owl-next{
+.owl-nav .owl-next {
   width: 50px;
   height: 50px;
-  background-color: $white_color!important;
+  background-color: $white_color !important;
   border-radius: 50%;
   display: block;
   position: absolute;
   right: 0;
   top: 143px;
-  font-family: "Font Awesome 5 Free"!important;
-  color: $main_color!important;
-  font-size: 35px!important;
-  font-weight: 900!important;
-  &:before{
+  font-family: "Font Awesome 5 Free" !important;
+  color: $main_color !important;
+  font-size: 35px !important;
+  font-weight: 900 !important;
+
+  &:before {
     content: "\f105";
   }
+}
+
+.theteam_block {
+  h2 {
+    margin: 107px 0 136px;
+    color: #4e525d;
+    font-size: 42px;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+.name {
+  margin-top: 71px;
+  color: #4e525d;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+}
+
+.position {
+  color: #4e525d;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin: -10px 0 34px;
+}
+
+.description {
+  color: #4e525d;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin-bottom: 110px;
+}
+
+.coupons_main {
+  background-color: #f1f1f1;
+  padding: 118px 0 100px;;
+}
+
+.coupons {
+  h3 {
+    line-height: 75px;
+    font-family: 'Open Sans', sans-serif;
+    color: $white_color;
+    font-size: 26px;
+    background-color: #485460;
+    margin: 0;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 68px;
+    font-size: 20px;
+    color: #485460;
+    background-color: #f8f9fb;
+    margin: 0;
+
+    a {
+      padding: 0 50px;
+      background-color: #788492;
+      display: inline-block;
+      margin: 30px 0;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 17px;
+      text-decoration: none;
+      color: $white_color;
+      border-radius: 4px;
+      border: 3px solid rgba(0, 0, 0, 0);
+
+      &:hover {
+        background-color: $white_color !important;
+        color: #485460;
+        border: 3px solid rgba(72, 84, 96, 1);
+        transition: 0.2s;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+
+    li {
+      border: 1px solid #f8f9fb;
+      color: #8c9299;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 46px;
+      font-size: 14px;
+      background-color: $white_color;
+    }
+  }
+}
+
+.aqua {
+  background-color: #49cbcd !important;
 }
