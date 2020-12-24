@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-Regular.eot');
+  src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+  url('../fonts/MyriadPro-Regular.woff') format('woff'),
+  url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
+  url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
     @content;
@@ -12,11 +25,6 @@ $white_color: white;
   height: 564px;
   background-color: #93c4b8;
   text-align: center;
-}
-
-footer {
-  height: 687px;
-  background-color: #4a4a4a;
 }
 
 .white {
@@ -139,7 +147,8 @@ nav.navbar.navbar-default {
     color: $white_color;
     margin-top: 28px;
     line-height: 36px;
-    br{
+
+    br {
       @include max-screen(767px) {
         display: none;
       }
@@ -179,6 +188,7 @@ nav.navbar.navbar-default {
   color: $main_color !important;
   font-size: 35px !important;
   font-weight: 900 !important;
+  outline: none;
   @include max-screen(767px) {
     top: 197px;
   }
@@ -201,6 +211,7 @@ nav.navbar.navbar-default {
   color: $main_color !important;
   font-size: 35px !important;
   font-weight: 900 !important;
+  outline: none;
   @include max-screen(767px) {
     top: 197px;
   }
@@ -308,8 +319,116 @@ nav.navbar.navbar-default {
   background-color: #49cbcd !important;
 }
 
-form{
-  button{
+form {
+  button {
     width: 100%;
+  }
+}
+
+footer {
+  background-image: url("../images/bg_footer.jpg");
+  height: 687px;
+  background-size: cover;
+  padding: 104px 0 0;
+
+  h2 {
+    font-family: 'Myriad Pro';
+    font-size: 42px;
+    color: white;
+    margin-bottom: 116px;
+  }
+
+  h4{
+    font-family: 'Myriad Pro';
+    font-size: 24px;
+    color: white;
+  }
+
+  .paragraph{
+    font-family: 'Myriad Pro';
+    font-size: 14px;
+    color: white;
+    max-width: 430px;
+  }
+
+  .icons{
+    margin: 40px 0 20px;
+  }
+  .contacts{
+    color: #bface2;
+    text-decoration: none;
+    font-family: 'Myriad Pro';
+    font-size: 14px;
+    a{
+      color: #bface2;
+      text-decoration: none;
+      font-family: 'Myriad Pro';
+      font-size: 14px;
+    }
+  }
+
+  .soc_icon {
+    font-size: 22px;
+    color: white;
+    width: 44px;
+    border-radius: 50%;
+    line-height: 44px;
+    text-decoration: none;
+
+    &:first-of-type {
+      background-color: #3b5997;
+    }
+
+    &:nth-child(2) {
+      background-color: #3ec2f3;
+    }
+
+    &:last-of-type {
+      background-color: #e44c41;
+    }
+    &:hover{
+      &:first-of-type{
+        color: #3b5997;
+        background-color: whitesmoke;
+        transition: 0.5s;
+      }
+      &:nth-child(2){
+        color: #3ec2f3;
+        background-color: whitesmoke;
+        transition: 0.5s;
+      }
+      &:last-of-type{
+        color: #e44c41;
+        background-color: whitesmoke;
+        transition: 0.5s;
+      }
+    }
+    margin-right: 15px;
+  }
+  form{
+    input.form-control{
+      height: 44px;
+    }
+    textarea.form-control{
+      height: 180px;
+    }
+    button{
+      line-height: 50px;
+      background-color: #788492;
+      display: inline-block;
+      font-family: 'Myriad Pro';
+      font-size: 22px;
+      text-decoration: none;
+      color: $white_color;
+      border-radius: 4px;
+      border: 3px solid rgba(0, 0, 0, 0);
+
+      &:hover {
+        background-color: $white_color !important;
+        color: #485460;
+        border: 3px solid rgba(72, 84, 96, 1);
+        transition: 0.2s;
+      }
+    }
   }
 }

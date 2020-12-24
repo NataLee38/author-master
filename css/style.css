@@ -1,11 +1,14 @@
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
 .background {
   height: 564px;
   background-color: #93c4b8;
   text-align: center; }
-
-footer {
-  height: 687px;
-  background-color: #4a4a4a; }
 
 .white {
   color: white; }
@@ -128,7 +131,8 @@ nav.navbar.navbar-default {
   font-family: "Font Awesome 5 Free" !important;
   color: #44c0c2 !important;
   font-size: 35px !important;
-  font-weight: 900 !important; }
+  font-weight: 900 !important;
+  outline: none; }
   @media screen and (max-width: 767px) {
     .owl-nav .owl-prev {
       top: 197px; } }
@@ -147,7 +151,8 @@ nav.navbar.navbar-default {
   font-family: "Font Awesome 5 Free" !important;
   color: #44c0c2 !important;
   font-size: 35px !important;
-  font-weight: 900 !important; }
+  font-weight: 900 !important;
+  outline: none; }
   @media screen and (max-width: 767px) {
     .owl-nav .owl-next {
       top: 197px; } }
@@ -230,5 +235,82 @@ nav.navbar.navbar-default {
 
 form button {
   width: 100%; }
+
+footer {
+  background-image: url("../images/bg_footer.jpg");
+  height: 687px;
+  background-size: cover;
+  padding: 104px 0 0; }
+  footer h2 {
+    font-family: 'Myriad Pro';
+    font-size: 42px;
+    color: white;
+    margin-bottom: 116px; }
+  footer h4 {
+    font-family: 'Myriad Pro';
+    font-size: 24px;
+    color: white; }
+  footer .paragraph {
+    font-family: 'Myriad Pro';
+    font-size: 14px;
+    color: white;
+    max-width: 430px; }
+  footer .icons {
+    margin: 40px 0 20px; }
+  footer .contacts {
+    color: #bface2;
+    text-decoration: none;
+    font-family: 'Myriad Pro';
+    font-size: 14px; }
+    footer .contacts a {
+      color: #bface2;
+      text-decoration: none;
+      font-family: 'Myriad Pro';
+      font-size: 14px; }
+  footer .soc_icon {
+    font-size: 22px;
+    color: white;
+    width: 44px;
+    border-radius: 50%;
+    line-height: 44px;
+    text-decoration: none;
+    margin-right: 15px; }
+    footer .soc_icon:first-of-type {
+      background-color: #3b5997; }
+    footer .soc_icon:nth-child(2) {
+      background-color: #3ec2f3; }
+    footer .soc_icon:last-of-type {
+      background-color: #e44c41; }
+    footer .soc_icon:hover:first-of-type {
+      color: #3b5997;
+      background-color: whitesmoke;
+      transition: 0.5s; }
+    footer .soc_icon:hover:nth-child(2) {
+      color: #3ec2f3;
+      background-color: whitesmoke;
+      transition: 0.5s; }
+    footer .soc_icon:hover:last-of-type {
+      color: #e44c41;
+      background-color: whitesmoke;
+      transition: 0.5s; }
+  footer form input.form-control {
+    height: 44px; }
+  footer form textarea.form-control {
+    height: 180px; }
+  footer form button {
+    line-height: 50px;
+    background-color: #788492;
+    display: inline-block;
+    font-family: 'Myriad Pro';
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    border: 3px solid rgba(0, 0, 0, 0); }
+    footer form button:hover {
+      background-color: white !important;
+      color: #485460;
+      border: 3px solid #485460;
+      transition: 0.2s; }
 
 /*# sourceMappingURL=style.css.map */
